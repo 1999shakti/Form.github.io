@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StartUp survey form</title>
+</head>
+<body>  
+    <h1 id="title">StartUp survey form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name<br>
+            <input id="name" placeholder="Enter your Name" type="text" required>
+            <br>
+        </label>
+        <label for="email" id="email-label">Email<br><input id="email" type="email" placeholder="Enter your Email" required><br></label>
+        <label for="number" id="number-label">Age (optional)<br><input id="number" type="number" min="20" max="60" placeholder="Age" required><br></label>
+        <label for="dropdown" id="dropdown1">Which option best describes your current role?<br>
+        </label>
+        <select id="dropdown" name="dropdown list option" required>
+            <option value="" selected ="true" disabled="true">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        <p id="recommend">Would you recommend StartUp to a friend ?
+        </p>
+        <div id="div"><input type="radio" name="radio" value="definitely" checked="true">
+        <label>Definitely<br></label></div>
+        <div id="div"><input type="radio" name="radio" value="maybe">
+        <label>Maybe<br></label></div>
+        <div id="div"><input type="radio" name="radio" value="not sure">
+        <label>Not Sure<br></label></div>
+        <label>
+            <div id="feature">Which is your favourite feature of StartUp?<br></div>
+            <select id="feature-dropdown" name="dropdown list option ff" required>
+                <option value="" selected="true" disabled="true">Select any option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open source">Open Source</option>
+            </select>
+        </label>
+        <p id="improve">What would you like to see improved? (Check all that apply)</p>
+        <div id="checkbox"><input type="checkbox" value="fep">
+        <label>Front-end Projects<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="bep">
+        <label>Back-end Projects<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="dv">
+        <label>Data Visualization<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="c">
+        <label>Challenges<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="osc">
+        <label>Open Source Community<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="ghr">
+        <label>Gitter help rooms<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="v">
+        <label>Videos<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="cm">
+        <label>City Meetups<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="w">
+        <label>Wiki<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="f">
+        <label>Forum<br></label></div>
+        <div id="checkbox"><input type="checkbox" value="ac">
+        <label>Additional Courses<br></label></div>
+        <label><div id="comments">Any comments or suggestions?</div></label>
+        <textarea placeholder="Enter your comment here..." id="comment-box"></textarea>     
+        <br>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
